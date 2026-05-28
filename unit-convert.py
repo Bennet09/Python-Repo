@@ -58,28 +58,40 @@ def main():
         
         # check if the user selected fahrenheit to celsius
     elif choice == '3':
+        
         # get the fahrenheit value as a decimal (float) from the user
         fahrenheit = float(input("Enter temperature in Fahrenheit: "))
+        
         # call the conversion function
         celsius = f_to_c(fahrenheit)
+        
         # print the result with 2 decimal places
         print(f"{fahrenheit}°F is equal to {celsius:.2f}°C.")
+        
         # check if the user selected celsius to fahrenheit
     elif choice == '4':
+        
         # get the celsius value as a decimal (float) from the user
         celsius = float(input("Enter temperature in Celsius: "))
+        
         # call the conversion function
         fahrenheit = c_to_f(celsius)
+        
         # print the result with 2 decimal places
         print(f"{celsius}°C is equal to {fahrenheit:.2f}°F.")
+        
         # check if the user selected kilograms to pounds
     elif choice == '5':
+        
         # get the kilograms value as a decimal (float) from the user
         kg = float(input("Enter weight in kilograms: "))
+        
         # call the conversion function
         lbs = kg_to_lbs(kg)
+        
         # print the result with 2 decimal places
         print(f"{kg} kilograms is equal to {lbs:.2f} pounds.")
+        
         # if the user entered an invalid option, display an error message
     else:
         print("Invalid option. Please select a number between 1 and 5.")
